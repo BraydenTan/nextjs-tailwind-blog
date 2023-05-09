@@ -34,7 +34,7 @@ export default function Blog({
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}
-        title="全部文章"
+        title="All Articles "
       />
     </>
   )
