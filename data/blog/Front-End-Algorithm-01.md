@@ -1,12 +1,16 @@
 ---
 title: Basic Leetcode with JavaScript 1
-date: '2023-01-04'
+date: '2023-05-02'
 tags: ['LeetCode', 'JavaScript']
 draft: false
 summary: Basic Foundation using JavaScipt for LeetCode
 images: []
 layout: PostLayout
 canonicalUrl: frontentleetcode01
+images:
+  [
+    '',
+  ]
 ---
 
 ## Introducing Front-End Algorithm, Array ,String,Traversal,Higher-order function,Regular expression and related math theory.
