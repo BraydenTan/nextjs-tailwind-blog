@@ -7,10 +7,6 @@ summary: Basic Foundation using JavaScipt for LeetCode
 images: []
 layout: PostLayout
 canonicalUrl: frontentleetcode01
-images:
-  [
-    '',
-  ]
 ---
 
 ## Introducing Front-End Algorithm, Array ,String,Traversal,Higher-order function,Regular expression and related math theory.
