@@ -579,7 +579,7 @@ Object.getOwnPropertyNames(arr) // ["0", "1", "length"]
 
 ```
 
-## <u>Regular expression 常用正则表达式</u>
+## <u>Regular expression</u>
 
 这里罗列一些我在刷算法题中遇到的正则表达式，如果有时间可认真学一下[正则表达式不要背](https://juejin.cn/post/6844903845227659271#heading-0)
 

@@ -1,10 +1,13 @@
 ---
 title: Basic Leetcode with JavaScript 2
-date: '2023-01-11'
-tags: ['LeetCode', 'JavaScript']
+date: '2023-05-14'
+tags: ['LeetCode', 'JavaScript', 'Algorithm']
 draft: false
 summary: Basic Foundation using JavaScipt for LeetCode
-images: []
+images:
+  [
+    https://elasticbeanstalk-ap-southeast-1-733447040549.s3.ap-southeast-1.amazonaws.com/Leetcodejavascript02.jpeg,
+  ]
 layout: PostLayout
 canonicalUrl: frontentleetcode01
 ---
