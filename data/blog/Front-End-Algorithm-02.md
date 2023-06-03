@@ -5,9 +5,10 @@ tags: ['LeetCode', 'JavaScript', 'Algorithm']
 draft: false
 summary: Basic Foundation using JavaScipt for LeetCode
 images:
-  [
-    https://elasticbeanstalk-ap-southeast-1-733447040549.s3.ap-southeast-1.amazonaws.com/Leetcodejavascript02.jpeg,
-  ]
+  # [
+  #   https://elasticbeanstalk-ap-southeast-1-733447040549.s3.ap-southeast-1.amazonaws.com/Leetcodejavascript02.jpeg,
+  # ]
+  ['/static/images/Leetcodejavascript02.jpeg']
 layout: PostLayout
 canonicalUrl: frontentleetcode01
 ---
