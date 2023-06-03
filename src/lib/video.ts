@@ -34,7 +34,8 @@ function download(url: string) {
 }
 
 export async function getVideos() {
-  const response = await fetch('https://api.bilibili.com/x/space/wbi/arc/search?mid=43664526', {
+  // const response = await fetch('https://api.bilibili.com/x/space/wbi/arc/search?mid=43664526', {
+  const response = await fetch('https://api.bilibili.com/x/space/wbi/arc/search?mid=', {
     headers: {
       'user-agent':
         'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36',
@@ -42,13 +43,14 @@ export async function getVideos() {
   })
   const res: JSONResponse = await response.json()
 
-  const videos = res.data.list.vlist
+  // const videos = res.data.list.vlist
 
-  for (let index = 0; index < videos.length; index++) {
-    const vitem = videos[index]
-    const pic = await download(vitem.pic)
-    vitem.pic = pic
-  }
+  // for (let index = 0; index < videos.length; index++) {
+  //   const vitem = videos[index]
+  //   const pic = await download(vitem.pic)
+  //   vitem.pic = pic
+  // }
 
-  return videos
+  // return videos
+  return null
 }

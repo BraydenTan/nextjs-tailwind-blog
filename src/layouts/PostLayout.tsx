@@ -87,7 +87,7 @@ export default function PostLayout(props: Props) {
                           />
                         )}
                         <dl className="whitespace-nowrap text-sm font-medium leading-5">
-                          <dt className="sr-only">作者</dt>
+                          <dt className="sr-only">Author</dt>
                           <dd className="text-gray-900 dark:text-gray-100">{author.name}</dd>
                         </dl>
                       </li>
@@ -96,7 +96,7 @@ export default function PostLayout(props: Props) {
                 </dd>
               </dl>
               <h2 className="pt-6 text-xs font-bold uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                目录
+                Topic
               </h2>
               <TOCInline asDisclosure={false} toc={props.toc} />
             </div>
@@ -119,7 +119,7 @@ export default function PostLayout(props: Props) {
                   />
                 </div>
 
-                <span>关注微信公众号，获取最新原创文章（首发）</span>
+                <span>Buy me coffee </span>
                 <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
               </div>
               <Comments frontMatter={frontMatter} />
@@ -129,7 +129,7 @@ export default function PostLayout(props: Props) {
                 {tags && (
                   <div className="py-4 xl:py-8">
                     <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                      标签
+                      Tag
                     </h2>
                     <div className="mt-3 flex flex-wrap">
                       {tags.map((tag) => (
@@ -143,7 +143,7 @@ export default function PostLayout(props: Props) {
                     {prev && (
                       <div>
                         <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                          上一篇 文章
+                          Last Article
                         </h2>
                         <div className="mt-3 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
                           <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
@@ -153,7 +153,7 @@ export default function PostLayout(props: Props) {
                     {next && (
                       <div>
                         <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                          下一篇 文章
+                          Next Article
                         </h2>
                         <div className="mt-3 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
                           <Link href={`/blog/${next.slug}`}>{next.title}</Link>
@@ -168,7 +168,7 @@ export default function PostLayout(props: Props) {
                   href="/blog"
                   className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                 >
-                  &larr; 返回文章列表
+                  &larr; Return Ariticle List
                 </Link>
               </div>
             </footer>
