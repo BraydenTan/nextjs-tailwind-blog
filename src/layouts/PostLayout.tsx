@@ -110,14 +110,14 @@ export default function PostLayout(props: Props) {
                 {children}
               </div>
               <div className="border-t border-gray-200 pt-6 pb-6 text-sm text-gray-700 dark:border-gray-700 dark:text-gray-300">
-                <div className="mb-3">
+                {/* <div className="mb-3">
                   <Image
                     alt="runjs-cool"
                     width={384}
                     height={140}
                     src={`/static/images/runjs-cool.webp`}
                   />
-                </div>
+                </div> */}
 
                 <span>Buy me coffee </span>
                 <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
