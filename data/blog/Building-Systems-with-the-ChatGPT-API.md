@@ -25,3 +25,16 @@ I've followed on-screen instructions to re-create their practical Jupyter notebo
 - Build an End-to-End System;
 - Evaluation - Part 1;
 - Evaluation - Part 2.
+
+- ## Language Models, the Chat Format and Tokens
+Load the API key and relevant Python libaries.
+In this course, we've provided some code that loads the OpenAI API key for you.
+```python3
+import os
+import openai
+import tiktoken
+from dotenv import load_dotenv, find_dotenv
+_ = load_dotenv(find_dotenv()) # read local .env file
+
+openai.api_key  = os.environ['OPENAI_API_KEY']
+```
