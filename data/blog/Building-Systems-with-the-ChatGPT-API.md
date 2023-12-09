@@ -26,15 +26,68 @@ I've followed on-screen instructions to re-create their practical Jupyter notebo
 - Evaluation - Part 1;
 - Evaluation - Part 2.
 
-- ## Language Models, the Chat Format and Tokens
-Load the API key and relevant Python libaries.
-In this course, we've provided some code that loads the OpenAI API key for you.
-```python3
-import os
-import openai
-import tiktoken
-from dotenv import load_dotenv, find_dotenv
-_ = load_dotenv(find_dotenv()) # read local .env file
+## Comprehensive Guide to AIGC and OpenAI's ChatGPT API
 
-openai.api_key  = os.environ['OPENAI_API_KEY']
+This guide is a deep dive into Artificial Intelligence Generated Content (AIGC), focusing on Language Models and their practical implementation using OpenAI's ChatGPT API, as demonstrated in a Jupyter notebook.
+
+### Part 1: Understanding AIGC
+
+_Language Models and the Chat Format_
+
+- How Language Models Work:
+  - Utilizing Supervised Learning, these models are trained to predict the next word in a sequence.
+  - Prompt-based AI is a powerful approach, allowing quick and efficient model utilization.
+- Types of Language Models:
+  - Base LLMs predict the next word based on training data.
+  - Instruction Tuned LLMs (like ChatGPT) follow input instructions more accurately.
+- From Base LLM to Instruction Tuned LLM:
+  - Training on large datasets and fine-tuning with examples that follow specific instructions.
+  - Using human feedback to improve the model’s outputs.
+
+_Tokens_
+
+- Tokens represent words or parts of words.
+- The tokenization process can vary based on word frequency and model design.
+
+_System, User, and Assistant Messages_
+
+- Different roles are defined for each entity interacting with the LLM.
+
+_Additional Concepts_
+
+- Classification, Moderation, Prompt Injections, and Chain of Thought Reasoning are essential in shaping the interaction with LLMs.
+
+### Part 2: Practical Application with OpenAI's ChatGPT API
+
+_Setting Up the Environment_
+The Jupyter notebook begins with the setup required for using the OpenAI API, particularly focusing on integration with Azure's OpenAI services.
+
+```python3
+import openai
+import os
+
+# Define Azure OpenAI endpoint parameters
+openai.api_type = "azure"
+openai.api_version = "2023-05-15"
+openai.api_base = os.getenv("OPENAI_API_BASE")
+openai.api_key = os.getenv("OPENAI_API_KEY")
+aoai_deployment = os.getenv("OPENAI_API_DEPLOY")
+
+```
+
+_Helper Functions for API Interaction_
+
+- Basic API Call Function
+- A function get_completion simplifies the process of sending prompts and receiving responses.
+
+```python3
+def get_completion(prompt, engine=aoai_deployment):
+    messages = [{"role": "user", "content": prompt}]
+    response = openai.ChatCompletion.create(
+        engine=engine,
+        messages=messages,
+        temperature=0,
+    )
+    return response.choices[0].message["content"]
+
 ```
