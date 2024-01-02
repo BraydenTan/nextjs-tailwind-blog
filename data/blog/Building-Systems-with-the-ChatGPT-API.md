@@ -78,7 +78,7 @@ aoai_deployment = os.getenv("OPENAI_API_DEPLOY")
 _Helper Functions for API Interaction_
 
 - Basic API Call Function
-- A function get_completion simplifies the process of sending prompts and receiving responses.
+- A function get_completion simplifies the process of sending prompts and receiving responses..
 
 ```python3
 def get_completion(prompt, engine=aoai_deployment):
