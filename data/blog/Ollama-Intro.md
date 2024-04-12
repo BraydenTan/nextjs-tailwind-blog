@@ -120,7 +120,35 @@ Set up a public key to allow you to push models from a remote computer.
 ```
 ollama push breydan96/financellm
 ```
+**OpenWebUI: A Visual Interface for Local LLM Interaction**
 
+Within the Ollama ecosystem, a plethora of outstanding open-source projects have emerged. Here, we'll introduce OpenWebUI, a local web interface that facilitates direct interaction with language models.
+
+## OpenWebUI: Features and Benefits
+
+OpenWebUI stands out as an extensible, feature-rich, and user-friendly self-hosted web interface. It offers complete offline operation and compatibility with both Ollama and OpenAI's API. This provides users with a visual interface that makes interacting with large language models more intuitive and convenient.
+
+**Installation Instructions**
+If you have Ollama and Docker installed on your system, follow these steps:
+
+```bash
+docker run -d -p 3000:8080 -e OLLAMA_BASE_URL=https://example.com -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+```
+
+Once the installation is complete, you can access OpenWebUI via http://localhost:3000.
+<p align="center">
+  <img src="/static/images/openwebui.png" alt="Image" />
+</p>
+Upon accessing the interface, you'll notice the "Select a model" option, allowing you to choose the model you recently downloaded.
+<p align="center">
+  <img src="/static/images/openwebuiselect.png" alt="Image" />
+</p>
+This effectively provides you with a GPT-like visual interface for local LLM interaction.
+<p align="center">
+  <img src="/static/images/openwebuichat1.png" alt="Image" />
+</p>
+
+OpenWebUI empowers users to interact with LLMs in a more intuitive and user-friendly manner, enhancing the overall LLM exploration experience.
 **Additional Resources =**
 [Ollama official documentation:](https://github.com/ollama/ollama/blob/main/docs/api.md)
 [Ollama GitHub repository:](https://github.com/ollama/ollama)
